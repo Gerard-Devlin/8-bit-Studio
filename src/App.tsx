@@ -1487,7 +1487,7 @@ function IntroModal({
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 py-10">
             <div className="w-full max-w-3xl rounded-3xl border border-white/15 bg-slate-950/95 text-white shadow-2xl">
-                <div className="space-y-6 p-6 sm:p-8">
+                <div className="space-y-6 p-6 sm:p-8 max-h-[80vh] overflow-y-auto sm:max-h-none sm:overflow-visible">
                     <div className="space-y-3 text-center">
                         <div className="flex flex-col items-center gap-4">
                             <img
