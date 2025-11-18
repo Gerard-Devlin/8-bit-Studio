@@ -1489,10 +1489,13 @@ function IntroModal({
             <div className="w-full max-w-3xl rounded-3xl border border-white/15 bg-slate-950/95 text-white shadow-2xl">
                 <div className="space-y-6 p-6 sm:p-8">
                     <div className="space-y-3 text-center">
-                        <h2 className="text-3xl font-semibold leading-tight">
-                            Welcome to 8-bit
-                            Studio
-                        </h2>
+                        <div className="flex flex-col items-center gap-4">
+                            <img
+                                src="./logo.png"
+                                alt="8-bit Studio logo"
+                                className="h-25 w-25 rounded-2xl  shadow-lg"
+                            />
+                        </div>
                         <p className="text-sm text-slate-300">
                             Follow this quick
                             guide to turn sketches
@@ -1541,7 +1544,7 @@ function IntroModal({
                         Start Creating
                     </Button>
                     <a
-                        href="https://github.com/Gerard-Devlin/PixelMuse"
+                        href="https://github.com/Gerard-Devlin/8-bit-Studio"
                         target="_blank"
                         rel="noreferrer"
                         className="mx-auto flex items-center justify-center gap-2 text-xs text-slate-400 transition-colors hover:text-white"
