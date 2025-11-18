@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    color-scheme: dark;
+    background-color: #05060d;
+    --background: 233 47% 6%;
+    --foreground: 210 40% 98%;
+    --muted: 233 27% 18%;
+    --muted-foreground: 218 15% 65%;
+    --popover: 233 47% 6%;
+    --popover-foreground: 210 40% 98%;
+    --card: 233 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --border: 225 32% 26%;
+    --input: 225 32% 26%;
+    --ring: 221 66% 57%;
+    --primary: 224 85% 66%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 14% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --accent: 220 17% 18%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --radius: 1rem;
+}
+
+.dark {
+    --background: 233 47% 6%;
+    --foreground: 210 40% 98%;
+    --muted: 233 27% 18%;
+    --muted-foreground: 218 15% 65%;
+    --popover: 233 47% 6%;
+    --popover-foreground: 210 40% 98%;
+    --card: 233 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --border: 225 32% 26%;
+    --input: 225 32% 26%;
+    --ring: 221 66% 57%;
+    --primary: 224 85% 66%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 14% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --accent: 220 17% 18%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --radius: 1rem;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(
+            circle at 20% 20%,
+            rgba(108, 129, 255, 0.2),
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(247, 118, 197, 0.25),
+            transparent 40%
+        ),
+        #05060d;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+@theme inline {
+    --animate-aurora: aurora 60s linear infinite;
+  @keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+        }
+  to {
+    background-position: 350% 50%, 350% 50%;
+        }
+    }
+}
+
+@layer base {
+    * {
+        border-color: rgba(255, 255, 255, 0.08);
+    }
+    body {
+        color: #f8fafc;
+    }
+}
